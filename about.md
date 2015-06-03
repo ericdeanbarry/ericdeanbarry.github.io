@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+# About
+----------------
 
-### More Information
+You really want to know? ;)
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm just a simple person. I want to change the world!
 
-### Contact me
+Like most, I'm trying to make my way in a world that is sliding backwards. Putting my hand to whatever ideas I have to make mine, and hopefully others lives better. Still working on it.
 
-[email@domain.com](mailto:email@domain.com)
+That's it for now. 
+
+*~Eric*
