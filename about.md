@@ -4,9 +4,6 @@ title: About
 permalink: /about/
 ---
 
-# About
-----------------
-
 You really want to know? ;)
 
 I'm just a simple person. I want to change the world!
