@@ -6,6 +6,11 @@ permalink: /lds/
 
 Stub page for Content regarding Mormonism and The Church of Jesus Christ, of Latter-Day Saints.
 
+<h3>Links</h3>
+* [LDS Website](https://www.lds.org/)
+* [Mormon dot org](http://www.mormon.org/)
+* [The Mormon Channel](http://www.mormonchannel.org/)
+
 <h2>LDS</h2>
 <ul class="posts">
 {% for post in site.posts %}

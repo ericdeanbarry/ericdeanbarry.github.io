@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Libertarian
+title: Liberty & Free Markets
 permalink: /libertarian/
 ---
 
