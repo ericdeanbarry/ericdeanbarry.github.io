@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font:14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: $darkGray;
 }
 
@@ -104,6 +104,26 @@ em, i {
 
 strong, b {
   font-weight: bold;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td {
+  text-align:left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+th {
+  color:#444;
 }
 
 img {
