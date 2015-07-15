@@ -6,6 +6,12 @@ permalink: /misc/
 
 Stub page for Content misc posts
 
+<table>
+<tr colalign=center colspan=3><th>Links</th></tr>
+<tr><td><a href=http://www.linux.com/ target=_blank>.</a></td><td><a href=http://www.linuxfoundation.org/ target=_blank>.</a></td><td><a href=http://www.debian.org/ target=_blank>.</a></td></tr>
+<tr><td><a href=http://www.documentfoundation.org/ target=_blank>Open Document Foundation</a></td><td>.</td><td>.</td></tr>
+</table>
+
 <h2>Personal</h2>
 <ul class="posts">
 {% for post in site.posts %}

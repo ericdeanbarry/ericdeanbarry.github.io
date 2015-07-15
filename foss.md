@@ -6,11 +6,11 @@ permalink: /foss/
 
 Stub page for Content regarding Linux and Free/Open Source Software.
 
-<h3>Links</h3>
-* [Linux dot com](http://www.linux.com/)
-* [The Linux Foundation](http://www.linuxfoundation.org/)
-* [Debian dot org](http://www.debian.org/)
-* [Open Document Foundation](https://www.documentfoundation.org/)
+<table>
+<tr colalign=center colspan=3><th>Links</th></tr>
+<tr><td><a href=http://www.linux.com/ target=_blank>Linux dot com</a></td><td><a href=http://www.linuxfoundation.org/ target=_blank>The Linux Foundation</a></td><td><a href=http://www.debian.org/ target=_blank>Debian dot org</a></td></tr>
+<tr><td><a href=http://www.documentfoundation.org/ target=_blank>Open Document Foundation</a></td><td>.</td><td>.</td></tr>
+</table>
 
 <h2>Linux</h2>
 <ul class="posts">
