@@ -50,6 +50,10 @@ url: http://ericdeanbarry.com
 # then add in the baseurl here, like this: "/repository-name"
 baseurl: ""
 
+# Pagination
+paginate: 3
+paginate_path: "/page:num/"
+
 #
 # !! You don't need to change any of the configuration flags below !!
 #
