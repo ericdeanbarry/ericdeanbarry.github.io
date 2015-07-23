@@ -13,9 +13,9 @@ During his speech at the Mises Institute, Judge Andrew Napolitano discussed "Fir
 
 _His full speech can be listened to at the link below._
 
-What are first principles? At the most basic level, they are a set of moral codes that are followed in every day life. Don't steal; don't kill; treat others as you wish to be treated. Pretty basic, and universal. Look at all moral codes, religious or otherwise and you will find these and other principles to guide one's life ina moral and ethical fashion.
+What are first principles? At the most basic level, they are a set of moral codes that are followed in every day life. Don't steal; don't kill; treat others as you wish to be treated. Pretty basic, and universal. Look at all moral codes, religious or otherwise and you will find these and other principles to guide one's life in a moral and ethical fashion.
 
-These principles, to be universal, must be applicable to all parts of one's life, private, public, even political. As a voluntaryist (or anarchist or libertarian - all three are interchangable in my mind) I believe it is of the highest importance that these principles form how I interact with others,regardless of their own first principles.
+These principles, to be universal, must be applicable to all parts of one's life, private, public, even political. As a voluntaryist (or anarchist or libertarian - all three are interchangable in my mind) I believe it is of the highest importance that these principles form how I interact with others, regardless of their own first principles.
 
 The most basic principle is "do no harm." One can call it the "Non-Agression Principle" or the "Golden Rule" or anything else, but it entails not causing personal or property harm to another individual. The core of this is the understanding that each individual is an owner of property, whether just their own bodies, or material goods. Given this, each as an individual should expect others to not harm their property (i.e. hurt them bodily, steal or damage material goods, etc.) and in return, they do like wise. This is the foundation of what Judge Napolitano calls "Natural Law."
 
