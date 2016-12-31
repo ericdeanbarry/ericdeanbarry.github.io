@@ -6,13 +6,11 @@ permalink: /foss/
 
 Stub page for Content regarding Linux and Free/Open Source Software.
 
-<table>
-<tr colalign=center colspan=3><th>Links</th></tr>
-<tr><td><a href=http://www.linux.com/ target=_blank>Linux dot com</a></td><td><a href=http://www.linuxfoundation.org/ target=_blank>The Linux Foundation</a></td><td><a href=http://www.debian.org/ target=_blank>Debian dot org</a></td></tr>
-<tr><td><a href=http://www.documentfoundation.org/ target=_blank>Open Document Foundation</a></td><td>.</td><td>.</td></tr>
-</table>
+### Links
+[Linux.com](http://www.linux.com/) | [The Linux Foundation](http://www.linuxfoundation.org/) | [Free Software Foundation](http://www.fsf.org/)  
+[Kubuntu](http://www.kubuntu.org/) | [KDE](https://www.kde.org/) | 
 
-<h2>Linux</h2>
+### Linux
 <ul class="posts">
 {% for post in site.posts %}
     {% if post.categories contains 'linux' %}
@@ -20,7 +18,7 @@ Stub page for Content regarding Linux and Free/Open Source Software.
     {% endif %}
 {% endfor %}
 </ul>
-<h2>FOSS</h2>
+### FOSS
 <ul class="posts">
 {% for post in site.posts %}
     {% if post.categories contains 'foss' %}
