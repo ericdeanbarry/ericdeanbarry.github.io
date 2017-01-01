@@ -6,13 +6,11 @@ permalink: /libertarian/
 
 Stub page for Content regarding libertarianism.
 
-<table>
-<tr colalign=center colspan=3><th>Links</th></tr>
-<tr><td><a href=http://tomwoods.com/ target=_blank>The Tom Woods Show</a></td><td><a href=http://www.libertarianism.org/ target=_blank>Libertarianism dot org</a></td><td><a href=http://voluntaryist.com/ target=_blank>Voluntaryist dot com</a></td></tr>
-<tr><td><a href=https://mises.org/ target=_blank>Mises Institute</a></td><td>.</td><td>.</td></tr>
-</table>
+### Links
+[The Tom Woods Show](http://tomwoods.com/) | [Mises Institute](https://mises.org/)  
+[Libertarianism](http://www.libertarianism.org/) | [Voluntaryism](http://voluntaryist.com/)
 
-<h2>Agorism</h2>
+### Agorism
 <ul class="posts">
 {% for post in site.posts %}
     {% if post.categories contains 'agorism' %}
@@ -20,7 +18,7 @@ Stub page for Content regarding libertarianism.
     {% endif %}
 {% endfor %}
 </ul>
-<h2>Voluntaryism</h2>
+### Voluntaryism
 <ul class="posts">
 {% for post in site.posts %}
     {% if post.categories contains 'voluntaryism' %}
@@ -28,7 +26,7 @@ Stub page for Content regarding libertarianism.
     {% endif %}
 {% endfor %}
 </ul>
-<h2>Libertarianism</h2>
+### Libertarianism
 <ul class="posts">
 {% for post in site.posts %}
     {% if post.categories contains 'libertarianism' %}
