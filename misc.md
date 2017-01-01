@@ -16,6 +16,7 @@ Stub page for Content misc posts
     {% endif %}
 {% endfor %}
 </ul>
+
 ### Site
 <ul class="posts">
 {% for post in site.posts %}

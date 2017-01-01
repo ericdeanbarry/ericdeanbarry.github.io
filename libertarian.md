@@ -18,6 +18,7 @@ Stub page for Content regarding libertarianism.
     {% endif %}
 {% endfor %}
 </ul>
+
 ### Voluntaryism
 <ul class="posts">
 {% for post in site.posts %}
@@ -26,6 +27,7 @@ Stub page for Content regarding libertarianism.
     {% endif %}
 {% endfor %}
 </ul>
+
 ### Libertarianism
 <ul class="posts">
 {% for post in site.posts %}

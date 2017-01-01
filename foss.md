@@ -18,6 +18,7 @@ Stub page for Content regarding Linux and Free/Open Source Software.
     {% endif %}
 {% endfor %}
 </ul>
+
 ### FOSS
 <ul class="posts">
 {% for post in site.posts %}
