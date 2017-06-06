@@ -2,7 +2,7 @@
 layout: post
 title:  "New Year, New Tools"
 date:   2017-01-12 07:00:00
-author: ericdeanbarry
+author: Eric D Barry
 categories: site linux
 ---
 

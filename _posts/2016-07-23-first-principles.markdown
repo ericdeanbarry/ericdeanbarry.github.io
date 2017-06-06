@@ -1,11 +1,11 @@
 ---
 layout: post
 title:  "First Principles"
-date:   2015-07-23 10:00:00
-author: ericdeanbarry
+date:   2016-07-23 10:00:00
+author: Eric D Barry
 categories: libertarianism
 tags: rights liberty freedom
----  
+---
 
 During his speech at the Mises Institute, Judge Andrew Napolitano discussed "First Principles." While they may vary between individuals, they should be guiding principles in life.
 

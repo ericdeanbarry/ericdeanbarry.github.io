@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Latter-Day Saints
-permalink: /lds/
+title: Hotrods
+permalink: /hotrods/
 ---
 
 Stub for Links and List of Related Posts

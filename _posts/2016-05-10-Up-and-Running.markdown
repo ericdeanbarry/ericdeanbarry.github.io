@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "You're Up and Running!"
-date:   2015-05-10 09:17:27
-author: ericdeanbarry
+date:   2016-05-10 09:17:27
+author: Eric D Barry
 categories: site
 ---
 

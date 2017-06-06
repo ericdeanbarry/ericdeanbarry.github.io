@@ -1,118 +1,119 @@
-# Jekyll Now
+![Build Status](https://gitlab.com/pages/jekyll/badges/master/build.svg)
+![Jekyll Version](https://img.shields.io/gem/v/jekyll.svg)
 
-**Jekyll** is a static site generator that's perfect for GitHub hosted blogs ([Jekyll Repository](https://github.com/jekyll/jekyll))
+---
 
-**Jekyll Now** makes it easier to create your Jekyll blog, by eliminating a lot of the up front setup.
+Example [Jekyll] website using GitLab Pages.  View it live at https://pages.gitlab.io/jekyll
 
-- You don't need to touch the command line
-- You don't need to install/configure ruby, rvm/rbenv, ruby gems :relaxed:
-- You don't need to install runtime dependancies like markdown processors, Pygments, etc
-- If you're on Windows, this will make setting up Jekyll a lot easier
-- It's easy to try out, you can just delete your forked repository if you don't like it
+[Learn more about GitLab Pages](https://pages.gitlab.io) or read the the [official GitLab Pages documentation](https://docs.gitlab.com/ce/user/project/pages/).
 
-In a few minutes you'll be set up with a minimal, responsive blog like the one below giving you more time to spend on writing epic blog posts!
+---
 
-![Jekyll Now Theme Screenshot](/images/jekyll-now-theme-screenshot.jpg "Jekyll Now Theme Screenshot")
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-## Quick Start
+- [Getting Started](#getting-started)
+  - [Start by forking this repository](#start-by-forking-this-repository)
+  - [Start from a local Jekyll project](#start-from-a-local-jekyll-project)
+- [GitLab CI](#gitlab-ci)
+- [Using Jekyll locally](#using-jekyll-locally)
+- [GitLab User or Group Pages](#gitlab-user-or-group-pages)
+- [Did you fork this project?](#did-you-fork-this-project)
+- [Other examples](#other-examples)
+- [Troubleshooting](#troubleshooting)
 
-### Step 1) Fork Jekyll Now to your User Repository
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-Fork this repo, then rename the repository to yourgithubusername.github.io.
+## Getting Started
 
-Your Jekyll blog will often be viewable immediately at <http://yourgithubusername.github.io> (if it's not, you can often force it to build by completing step 2)
+You can get started with GitLab Pages using Jekyll easily by either forking this repository or by uploading a new/existing Jekyll project.
 
-![Step 1](/images/step1.gif "Step 1")
+Remember you need to wait for your site to build before you will be able to see your changes.  You can track the build on the **Pipelines** tab.
 
-### Step 2) Customize and view your site
+### Start by forking this repository
 
-Enter your site name, description, avatar and many other options by editing the _config.yml file. You can easily turn on Google Analytics tracking, Disqus commenting and social icons here too.
+1. Fork this repository.
+1. **IMPORTANT:** Remove the fork relationship.
+Go to **Settings (⚙)** > **Edit Project** and click the **"Remove fork relationship"** button.
+1. Enable Shared Runners.
+Go to **Settings (⚙)** > **CI/CD Pipelines** and click the **"Enable shared Runners"** button.
+1. Rename the repository to match the name you want for your site.
+1. Edit your website through GitLab or clone the repository and push your changes.
 
-Making a change to _config.yml (or any file in your repository) will force GitHub Pages to rebuild your site with jekyll. Your rebuilt site will be viewable a few seconds later at <http://yourgithubusername.github.io> - if not, give it ten minutes as GitHub suggests and it'll appear soon
+### Start from a local Jekyll project
 
-> There are 3 different ways that you can make changes to your blog's files:
+1. [Install][] Jekyll.
+1. Use `jekyll new` to create a new Jekyll Project.
+1. Add [this `.gitlab-ci.yml`](.gitlab-ci.yml) to the root of your project.
+1. Push your repository and changes to GitLab.
 
-> 1. Edit files within your new username.github.io repository in the browser at GitHub.com (shown below).
-> 2. Use a third party GitHub content editor, like [Prose by Development Seed](http://prose.io). It's optimized for use with Jekyll making markdown editing, writing drafts, and uploading images really easy.
-> 3. Clone down your repository and make updates locally, then push them to your GitHub repository.
+## GitLab CI
 
-![_config.yml](/images/config.png "_config.yml")
+This project's static Pages are built by [GitLab CI][ci], following the steps
+defined in [`.gitlab-ci.yml`](.gitlab-ci.yml):
 
-### Step 3) Publish your first blog post
+```
+image: ruby:2.3
 
-Edit `/_posts/2014-3-3-Hello-World.md` to publish your first blog post. This [Markdown Cheatsheet](http://www.jekyllnow.com/Markdown-Style-Guide/) might come in handy.
+variables:
+  JEKYLL_ENV: production
 
-![First Post](/images/first-post.png "First Post")
+pages:
+  script:
+  - bundle install
+  - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+```
 
-> You can add additional posts in the browser on GitHub.com too! Just hit the + icon in `/_posts/` to create new content. Just make sure to include the [front-matter](http://jekyllrb.com/docs/frontmatter/) block at the top of each new blog post and make sure the post's filename is in this format: year-month-day-title.md
+## Using Jekyll locally
 
-## Local Development
+To work locally with this project, you'll have to follow the steps below:
 
-1. Install Jekyll and plug-ins in one fell swoop. `gem install github-pages` This mirrors the plug-ins used by GitHub Pages on your local machine including Jekyll, Sass, etc.
-2. Clone down your fork `git clone git@github.com:yourusername/yourusername.github.io.git`
-3. Serve the site and watch for markup/sass changes `jekyll serve`
-4. View your website at http://0.0.0.0:4000
-5. Commit any changes and push everything to the master branch of your GitHub user repository. GitHub Pages will then rebuild and serve your website.
+1. Fork, clone or download this project
+1. [Install][] Jekyll
+1. Download dependencies: `bundle`
+1. Build and preview: `bundle exec jekyll serve`
+1. Add content
 
-## Moar!
+The above commands should be executed from the root directory of this project.
 
-I've created a more detailed walkthrough, [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/) over at the Smashing Magazine website. Check it out if you'd like a more detailed walkthrough and some background on Jekyll. :metal:
+Read more at Jekyll's [documentation][].
 
-It covers:
+## GitLab User or Group Pages
 
-- A more detailed walkthrough of setting up your Jekyll blog
-- Common issues that you might encounter while using Jekyll
-- Importing from Wordpress, using your own domain name, and blogging in your favorite editor
-- Theming in Jekyll, with Liquid templating examples
-- A quick look at Jekyll 2.0’s new features, including Sass/Coffeescript support and Collections
+To use this project as your user/group website, you will need one additional
+step: just rename your project to `namespace.gitlab.io`, where `namespace` is
+your `username` or `groupname`. This can be done by navigating to your
+project's **Settings**.
 
-## Jekyll Now Features
+Read more about [user/group Pages][userpages] and [project Pages][projpages].
 
-✓ Command-line free _fork-first workflow_, using GitHub.com to create, customize and post to your blog  
-✓ Fully responsive and mobile optimized base theme (**[Theme Demo](http://jekyllnow.com)**)  
-✓ Sass/Coffeescript support using Jekyll 2.0  
-✓ Free hosting on your GitHub Pages user site  
-✓ Markdown blogging  
-✓ Syntax highlighting  
-✓ Disqus commenting  
-✓ Google Analytics integration  
-✓ SVG social icons for your footer  
-✓ 3 http requests, including your avatar  
+## Did you fork this project?
 
-✘ No installing dependancies  
-✘ No need to set up local development  
-✘ No configuring plugins  
-✘ No need to spend time on theming  
-✘ More time to code other things ... wait ✓!  
+If you forked this project for your own use, please go to your project's
+**Settings** and remove the forking relationship, which won't be necessary
+unless you want to contribute back to the upstream project.
 
-## Questions?
+## Other examples
 
-[Open an Issue](https://github.com/barryclark/jekyll-now/issues/new) and let's chat!
+* [jekyll-branched](https://gitlab.com/pages/jekyll-branched) demonstrates how you can keep your GitLab Pages site in one branch and your project's source code in another.
+* The [jekyll-themes](https://gitlab.com/groups/jekyll-themes) group contains a collection of example projects you can fork (like this one) having different visual styles.
 
-## Other forkable themes
+## Troubleshooting
 
-You can use the [Quick Start](https://github.com/barryclark/jekyll-now#quick-start) workflow with other themes that are set up to be forked too! Here are some of my favorites:
+1. CSS is missing! That means two things:
+    * Either that you have wrongly set up the CSS URL in your templates, or
+    * your static generator has a configuration option that needs to be explicitly
+    set in order to serve static assets under a relative URL.
 
-- [Hyde](https://github.com/poole/hyde) by MDO
-- [Lanyon](https://github.com/poole/lanyon) by MDO
-- [mojombo.github.io](https://github.com/mojombo/mojombo.github.io) by Tom Preston-Werner
-- [Left](https://github.com/holman/left) by Zach Holman
-- [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) by Michael Rose
-- [Skinny Bones](https://github.com/mmistakes/skinny-bones-jekyll) by Michael Rose
-
-## Credits
-
-- [Jekyll](https://github.com/jekyll/jekyll) - Thanks to its creators, contributors and maintainers.
-- [SVG icons](https://github.com/neilorangepeel/Free-Social-Icons) - Thanks, Neil Orange Peel. They're beautiful.
-- [Solarized Light Pygments](https://gist.github.com/edwardhotchkiss/2005058) - Thanks, Edward.
-- [Joel Glovier](http://joelglovier.com/writing/) - Great Jekyll articles. I used Joel's feed.xml in this repository.
-- [David Furnes](https://github.com/dfurnes), [Jon Uy](https://github.com/jonuy), [Luke Patton](https://github.com/lkpttn) - Thanks for the design/code reviews.
-- [Bart Kiers](https://github.com/bkiers), [Florian Simon](https://github.com/vermluh), [Henry Stanley](https://github.com/henryaj), [Hun Jae Lee](https://github.com/hunjaelee), [Javier Cejudo](https://github.com/javiercejudo), [Peter Etelej](https://github.com/etelej), [Ben Abbott](https://github.com/jaminscript), [Ray Nicholus](https://github.com/rnicholus), [Erin Grand](https://github.com/eringrand), [Léo Colombaro](https://github.com/LeoColomb), [Dean Attali](https://github.com/daattali), [Clayton Errington](https://github.com/cjerrington), [Colton Fitzgerald](https://github.com/coltonfitzgerald), [Trace Mayer](https://github.com/sunnankar) - Thanks for your [fantastic contributions](https://github.com/barryclark/jekyll-now/commits/master) to the project!
-
-## Contributing
-
-Issues and Pull Requests are greatly appreciated. If you've never contributed to an open source project before I'm more than happy to walk you through how to create a pull request.
-
-You can start by [opening an issue](https://github.com/barryclark/jekyll-now/issues/new) describing the problem that you're looking to resolve and we'll go from there.
-
-I want to keep Jekyll Now as minimal as possible. Every line of code should be one that's useful to 90% of the people using it. Please bear that in mind when submitting feature requests. If it's not something that most people will use, it probably won't get merged. :guardsman:
+[ci]: https://about.gitlab.com/gitlab-ci/
+[Jekyll]: http://jekyllrb.com/
+[install]: https://jekyllrb.com/docs/installation/
+[documentation]: https://jekyllrb.com/docs/home/
+[userpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#user-or-group-pages
+[projpages]: https://docs.gitlab.com/ce/user/project/pages/introduction.html#project-pages

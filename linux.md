@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Latter-Day Saints
-permalink: /lds/
+title: Linux
+permalink: /linux/
 ---
 
 Stub for Links and List of Related Posts

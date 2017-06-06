@@ -4,14 +4,14 @@ title: About
 permalink: /about/
 ---
 
-You really want to know? ;)
+More will come later. For now, this:
 
-I'm just a simple person. I want to change the world!
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-Like most, I'm trying to make my way in a world that is sliding backwards. Putting my hand to whatever ideas I have to make mine, and hopefully others lives better. Still working on it.
+You can find the source code for the Jekyll new theme at:
+{% include icon-github.html username="jglovier" %} /
+[jekyll-new](https://github.com/jglovier/jekyll-new)
 
-That's it for now. 
-
-*~Eric*
-
-
+You can find the source code for Jekyll at
+{% include icon-github.html username="jekyll" %} /
+[jekyll](https://github.com/jekyll/jekyll)
