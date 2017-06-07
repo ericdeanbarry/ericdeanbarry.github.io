@@ -9,7 +9,7 @@
 title: Eric Dean Barry
 email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Just a little blurb about me and my interests. Hotrods, Linux, LDS beliefs, Anarchy
+  Just a little blog about me and my interests. Hotrods, LDS beliefs, Liberty, Linux
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ericdeanbarry.com" # the base hostname & protocol for your site
 
