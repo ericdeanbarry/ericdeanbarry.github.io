@@ -7,7 +7,7 @@ permalink: /linux/
 Stub for Links and List of Related Posts
 
 ### Links
-[Linux.com](http://www.linux.com/) | [The Linux Foundation](http://www.linuxfoundation.org/) | [Free Software Foundation](http://www.fsf.org/)
+[Linux.com](http://www.linux.com/) | [The Linux Foundation](http://www.linuxfoundation.org/) | [Free Software Foundation](http://www.fsf.org/) |
 [Fedora](https://getfedora.org/) | [Gnome](https://www.gnome.org/) | [KDE](https://www.kde.org/) |
 
 ### Posts
