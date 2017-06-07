@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Libertarianism
-permalink: /libertarian/
+title: Liberty
+permalink: /liberty/
 ---
 
 Stub for Links and List of Related Posts

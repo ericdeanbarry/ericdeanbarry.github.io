@@ -3,7 +3,7 @@ layout: post
 title:  "First Principles"
 date:   2016-07-23 10:00:00
 author: Eric D Barry
-categories: libertarianism
+categories: liberty
 tags: rights liberty freedom
 ---
 
