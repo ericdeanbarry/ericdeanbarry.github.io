@@ -7,7 +7,7 @@ permalink: /lds/
 Stub for Links and List of Related Posts
 
 ### Links
-[LDS Website](https://www.lds.org/)</div> | [If you are interested](http://www.mormon.org/) | [Church Media](http://www.mormonchannel.org/)
+[LDS Website](https://www.lds.org/) | [If you are interested](http://www.mormon.org/) | [Church Media](http://www.mormonchannel.org/)
 
 ### Posts
 <ul class="posts">
