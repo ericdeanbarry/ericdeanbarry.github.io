@@ -4,7 +4,8 @@ title: Liberty
 permalink: /liberty/
 ---
 
-Stub for Links and List of Related Posts
+I am an anarchist. Strictly speaking, anarchy means no rulers, not no rules. There are plenty of rules, though in an anarchist society they are created and impact only those that voluntarily agree to them. Most will not like this arrangement and will want some kind of central state to govern their lives for them. This is acceptable so long as it does not include those that do not want to be governed by said state.
+
 
 ### Links
 
